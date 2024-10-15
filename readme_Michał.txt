@@ -6,3 +6,4 @@ Chcę wywołać konflikt Michał
 >>>>>>> MICHAŁ_TEST
 
 CO JA ROBIE MICHAŁŁŁŁ
+Czy tutaj będize konflikt?
