@@ -1,0 +1,258 @@
+
+kamil@Kamil_Redmibook MINGW64 ~
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+kamil@Kamil_Redmibook MINGW64 ~
+$ ls
+LSCSHostPolicy.dll  lsaadt.dll          lsm.dll
+LsaIso.exe          lsasrv.dll          lsmproxy.dll
+ls                  lsass.exe           lstelemetry.dll
+ls.exe              lsattr.exe
+
+kamil@Kamil_Redmibook MINGW64 ~
+$ ls
+ AMDRM_Install.log
+ AMD_RyzenMaster.log
+ AppData/
+ Contacts/
+ Cookies@
+ CrossDevice/
+'Dane aplikacji'@
+ Documents/
+ Downloads/
+ Favorites/
+ InspiroTex/
+ Links/
+'Menu Start'@
+'Moje dokumenty'@
+ Music/
+ NTUSER.DAT
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pobrane/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+ Szablony@
+'Ustawienia lokalne'@
+ Videos/
+ Web/
+ WebComponents/
+ anaconda3/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ source/
+
+kamil@Kamil_Redmibook MINGW64 ~
+$ cd InspiroTex/
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (dev)
+$ git status
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        InspiroTex/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (dev)
+$ git pull
+Already up to date.
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (dev)
+$ git l
+lfs   log
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (dev)
+$ git log
+commit 88548939d46bb30c3674d6839816f3d906517abd (HEAD -> dev, origin/dev)
+Author: Kamil Kowalski <kamileo04@gmail.com>
+Date:   Thu Oct 10 14:09:18 2024 +0200
+
+    initial commit
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (dev)
+$ git branch KAMIL_HELLO
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (dev)
+$ git checkout KAMIL_HELLO
+Switched to branch 'KAMIL_HELLO'
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ touch kamil.txt
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ ls
+InspiroTex/  kamil.txt  test
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ notepad
+.git/       InspiroTex/ kamil.txt   test
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ notepad kamil.txt
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ git log
+commit 88548939d46bb30c3674d6839816f3d906517abd (HEAD -> KAMIL_HELLO, origin/dev, dev)
+Author: Kamil Kowalski <kamileo04@gmail.com>
+Date:   Thu Oct 10 14:09:18 2024 +0200
+
+    initial commit
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ git add
+InspiroTex/ kamil.txt
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ git add
+InspiroTex/ kamil.txt
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ git add kamil.txt
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ touch usun_kamil.txt
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ notepad usun_kamil.txt
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ git add
+InspiroTex/     usun_kamil.txt
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ git add usun_kamil.txt
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ ^[[200~touch ukryty_imie.txt
+bash: $'\E[200~touch': command not found
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ touch ukryty_imie.txt
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ git rm ukryty_imie.txt
+fatal: pathspec 'ukryty_imie.txt' did not match any files
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ rm usun_kamil.txt
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ rm ukryty_imie.txt
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ touch usun_kamil.txt
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ git add usun_kamil.txt
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ touch ukryty_kamil.txt
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ nano .gitignore
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ git status
+On branch KAMIL_HELLO
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   kamil.txt
+        new file:   usun_kamil.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        InspiroTex/
+
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ git add
+.gitignore  InspiroTex/
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ git add .gitignore
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ ls
+InspiroTex/  kamil.txt  test  ukryty_kamil.txt  usun_kamil.txt
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ mv kamil.txt readme_kamil.txt
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ git add
+InspiroTex/       kamil.txt         readme_kamil.txt
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ git add readme_kamil.txt
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ git rm kamil.txt
+rm 'kamil.txt'
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ git commit -m "Dodanie pliku Readme Imie"
+[KAMIL_HELLO af0e91f] Dodanie pliku Readme Imie
+ 3 files changed, 2 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 readme_kamil.txt
+ create mode 100644 usun_kamil.txt
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ git status
+On branch KAMIL_HELLO
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        InspiroTex/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ git push
+fatal: The current branch KAMIL_HELLO has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin KAMIL_HELLO
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ git push --set-upstream origin KAMIL_HELLO
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 380 bytes | 380.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'KAMIL_HELLO' on GitHub by visiting:
+remote:      https://github.com/kamileo04/InspiroTex/pull/new/KAMIL_HELLO
+remote:
+To https://github.com/kamileo04/InspiroTex.git
+ * [new branch]      KAMIL_HELLO -> KAMIL_HELLO
+branch 'KAMIL_HELLO' set up to track 'origin/KAMIL_HELLO'.
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ git tag
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$ git log --oneline --decorate
+af0e91f (HEAD -> KAMIL_HELLO, origin/KAMIL_HELLO) Dodanie pliku Readme Imie
+8854893 (origin/dev, dev) initial commit
+
+kamil@Kamil_Redmibook MINGW64 ~/InspiroTex (KAMIL_HELLO)
+$
